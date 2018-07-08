@@ -1,0 +1,27 @@
+{
+  "name": "gf.js",
+  "version": "1.0.0",
+  "description": "Türkçe yardım ve destek botu",
+  "main": "gf.js",
+  "author": "AgentSLyaer",
+  "dependencies": {
+    "bot.js": "0.0.1",
+    "discord.io": "^2.5.3",
+    "discord.js": "^11.2.1",
+    "options": "0.0.6",
+    "stack-trace": "0.0.10",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "o!deneme"
+  },
+  "repository": {
+    "type": "git",
+    "url": "deneme başarılı"
+  },
+  "keywords": [
+    "o!simitye"
+  ],
+  "license": "ISC"
+}
