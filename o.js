@@ -174,7 +174,7 @@ let embed = new Discord.RichEmbed()
 .addField("Abim buyur oraletin",
 "İstediğinden değilse söyle (Kivi, portakal? Hangisiyse yaz)")
 msg.channel.send({embed: embed})
-var cevaplar = ['http://c12.incisozluk.com.tr/res/incisozluk//11503/9/2878559_o0583.jpg','https://pbs.twimg.com/profile_images/541931317257318400/2xBJjgen_400x400.jpeg' ]; 
+var cevaplar = ['https://pbs.twimg.com/profile_images/419921182574788608/euNCj0cl_400x400.jpeg','https://pbs.twimg.com/profile_images/541931317257318400/2xBJjgen_400x400.jpeg' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
 }
