@@ -360,52 +360,6 @@ msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RAN
 
 });
 
-client.on('message', msg => {
-if (msg.content === prefix + 'sunucubilgi') {
-
-    if  (msg.channel.type === 'dm') {
-
-      const ozelmesajuyarii = new Discord.RichEmbed()
-
-    .setColor(0x00AE86)
-
-    .setTimestamp()
-
-    .setAuthor(msg.author.username, msg.author.avatarURL);
-
-    msg.author.sendEmbed(ozelmesajuyarii); }
-
-    if (msg.channel.type !== 'dm') {
-
-      const sunucubilgi = new Discord.RichEmbed()
-
-    .setColor(0x00AE86)
-
-    .setTimestamp()
-
-    .setAuthor(msg.guild.name, msg.guild.iconURL)
-
-    .addField('Ad:', msg.guild.name)
-
-    .addField('ID', msg.guild.id)
-
-    .addField('Ana kanal:', msg.guild.defaultChannel)
-
-    .addField('Bölge', msg.guild.region)
-
-    .addField('Üye sayısı:', msg.guild.memberCount)
-
-    .addField('Sahibi:', msg.guild.owner)
-
-    .addField('Kanal sayısı:', msg.guild.channels.size)
-
-    .addField('Oluşturulma tarihi:', msg.guild.createdAt);
-
-    return  msg.channel.sendEmbed(sunucubilgi);
-
-    }
-	}); 
-	});
 
 
 
