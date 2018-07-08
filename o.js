@@ -167,8 +167,7 @@ msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RAN
 } 
 });
 
-
- client.on('message', msg => {
+client.on('message', msg => {
 if (msg.content === prefix + 'topuğunasık') { 
 var cevaplar = ['https://i.hizliresim.com/6Jy1k3.jpg','https://i.hizliresim.com/8YNr1r.jpg' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
@@ -209,8 +208,7 @@ client.channels.get("401633988726226956").send(msg.author.username + '** şunu t
 msg.channel.send({embed: embed}) 
 }} 
 });
-
-	   client.on('message', msg => {
+client.on('message', msg => {
 if (msg.content ===  prefix + 'oraletiç') { 
 let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
