@@ -360,7 +360,7 @@ msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RAN
 
 });
 
-
+client.on('message', msg => {
 if (msg.content.toLowerCase() === prefix + 'sunucubilgi') {
 
     if  (msg.channel.type === 'dm') {
@@ -405,6 +405,7 @@ if (msg.content.toLowerCase() === prefix + 'sunucubilgi') {
 
     }
 	}); 
+	});
 
 
 
