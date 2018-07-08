@@ -174,7 +174,7 @@ let embed = new Discord.RichEmbed()
 .addField("Abim buyur oraletin",
 "İstediğinden değilse söyle (Kivi, portakal? Hangisiyse yaz)")
 msg.channel.send({embed: embed})
-var cevaplar = ['https://www.google.com.tr/imgres?imgurl=https%3A%2F%2Fi0.wp.com%2Fwww.kadinbakisi.com%2Fwp-content%2Fuploads%2F2016%2F02%2Foralet-zararli-mi.jpg%3Fresize%3D330%252C330&imgrefurl=http%3A%2F%2Fwww.kadinbakisi.com%2Foralet-sagliga-zararli-mi%2F&docid=_IerPhoNyBiErM&tbnid=Lxdmxu2md57S6M%3A&vet=10ahUKEwjp1PqGipDcAhUM2ywKHQB_CzEQMwg5KAYwBg..i&w=330&h=330&bih=651&biw=1366&q=oralet%20portakal&ved=0ahUKEwjp1PqGipDcAhUM2ywKHQB_CzEQMwg5KAYwBg&iact=mrc&uact=8','https://www.google.com.tr/imgres?imgurl=https%3A%2F%2Fi0.wp.com%2Fwww.kadinbakisi.com%2Fwp-content%2Fuploads%2F2016%2F02%2Foralet-zararli-mi.jpg%3Fresize%3D330%252C330&imgrefurl=http%3A%2F%2Fwww.kadinbakisi.com%2Foralet-sagliga-zararli-mi%2F&docid=_IerPhoNyBiErM&tbnid=Lxdmxu2md57S6M%3A&vet=10ahUKEwjp1PqGipDcAhUM2ywKHQB_CzEQMwg5KAYwBg..i&w=330&h=330&bih=651&biw=1366&q=oralet%20portakal&ved=0ahUKEwjp1PqGipDcAhUM2ywKHQB_CzEQMwg5KAYwBg&iact=mrc&uact=8' ]; 
+var cevaplar = ['https://pbs.twimg.com/profile_images/541931317257318400/2xBJjgen_400x400.jpeg','https://pbs.twimg.com/profile_images/541931317257318400/2xBJjgen_400x400.jpeg' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
 }
