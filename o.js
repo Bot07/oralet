@@ -158,7 +158,23 @@ client.on('message', msg => {
     return  msg.channel.sendEmbed(sunucubilgi);
 
     }
-
+if (message.content === prefix + 'oraletiç') {
+    message.channel.send(`Kivi mi? Portakal mı? (Kivi ise: kivi Portakal ise: portakal yaz)`).then(() => {
+            message.channel.awaitMessages(response => response.content === `kivi` || response.content === 'portakal',  {
+                max: 1, // number of responses to collect
+                time: 10000, //time that bot waits for answer in ms
+                errors: ['time'],
+            })
+                .then((collected) => {
+                    var pollRes = collected.first().content; //this is the first response collected
+                    message.channel.send(pollRes + 'İstedin, hemen geliyor!');
+                    // Do something else here (save response in database)
+                })
+                .catch(() => { // if no message is collected
+                    message.channel.send('Duyamadım, tekarar söyle');
+                });
+        });
+};
   }
 
 });
