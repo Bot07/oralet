@@ -136,7 +136,7 @@ if (msg.content === prefix + 'davet') {
 let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 .addField("Beni Eklemek İçin Tıkla",  
-"https://bit.ly/2tQCiLz") 
+"https://bit.ly/2tZDTj9") 
 .addField("Çayocağıma Gelmek İçin Tıkla",  
 "https://discord.gg/89j8fNX")   
 msg.channel.send({embed: embed}) 
