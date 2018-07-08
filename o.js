@@ -15,7 +15,7 @@ client.on('ready', () => {
 	msg.channel.bulkDelete(2);
 	   let embed = new Discord.RichEmbed()
     .setColor(3447003)
-	.setDescription(söz)
+	.setDescription(söz + '\n"Adamsan beni konuşturacağına kendin konuş, hadi bakıyım!"')
 return msg.channel.send({embed})}
    }
 
@@ -31,7 +31,7 @@ let embed = new Discord.RichEmbed()
 .addField(":cry: Mod Komutları :hammer: ",  
 "\n o!temizçek = Kanalı tamamen temizler. \n o!temizle <sayı> = Belirtilen sayı kadar mesaj siler.") 
 .addField(":joy: Eğlence Komutları :stuck_out_tongue: ", 
-"*\n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunucu bilgisini gösterir.") 
+"*\n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!yanıyorsunfuatabi = Dene de gör! \n hıyar = Şimdi yedim ulan seni!") 
 .setFooter(`Bot yapımcısı: Emir | AgentSLayer#5218'dir`) 
 msg.member.send({embed: embed}) 
 }
@@ -61,7 +61,7 @@ return msg.channel.send({embed})}
 if (msg.content === prefix + 'ekip') { 
 let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-.addField("MAFYA EKİBİM", 
+.addField("Çaycılar", 
 "https://fliegeryapim.weebly.com/") 
 msg.channel.send({embed: embed}) 
 } 
@@ -113,51 +113,7 @@ var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)];
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
 } 
 });
-client.on('message', msg => {
 
-  if (msg.content.toLowerCase() === prefix + 'sunucubilgi') {
-
-    if  (msg.channel.type === 'dm') {
-
-      const ozelmesajuyarii = new Discord.RichEmbed()
-
-    .setColor(0x00AE86)
-
-    .setTimestamp()
-
-    .setAuthor(msg.author.username, msg.author.avatarURL);
-
-    msg.author.sendEmbed(ozelmesajuyarii); }
-
-    if (msg.channel.type !== 'dm') {
-
-      const sunucubilgi = new Discord.RichEmbed()
-
-    .setColor(0x00AE86)
-
-    .setTimestamp()
-
-    .setAuthor(msg.guild.name, msg.guild.iconURL)
-
-    .addField('Ad:', msg.guild.name)
-
-    .addField('ID', msg.guild.id)
-
-    .addField('Ana kanal:', msg.guild.defaultChannel)
-
-    .addField('Bölge', msg.guild.region)
-
-    .addField('Üye sayısı:', msg.guild.memberCount)
-
-    .addField('Sahibi:', msg.guild.owner)
-
-    .addField('Kanal sayısı:', msg.guild.channels.size)
-
-    .addField('Oluşturulma tarihi:', msg.guild.createdAt);
-
-    return  msg.channel.sendEmbed(sunucubilgi);
-
-    }
 
  client.on('message', msg => {
 if (msg.content === prefix + 'tokatla') { 
@@ -167,7 +123,8 @@ msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RAN
 } 
 });
 
-client.on('message', msg => {
+
+ client.on('message', msg => {
 if (msg.content === prefix + 'topuğunasık') { 
 var cevaplar = ['https://i.hizliresim.com/6Jy1k3.jpg','https://i.hizliresim.com/8YNr1r.jpg' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
@@ -181,7 +138,7 @@ let embed = new Discord.RichEmbed()
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 .addField("Beni Eklemek İçin Tıkla",  
 "https://bit.ly/2tQCiLz") 
-.addField("Sunucuma Gelmek İçin Tıkla",  
+.addField("Çayocağıma Gelmek İçin Tıkla",  
 "https://discord.gg/89j8fNX")   
 msg.channel.send({embed: embed}) 
 } 
@@ -194,6 +151,8 @@ var sonuc = sans[Math.floor((Math.random() * sans.length))];
 msg.channel.send(`**Sonuç: ${sonuc}**`); 
 } 
 });
+
+
 
 
 client.on('message', msg => {
@@ -209,6 +168,19 @@ msg.channel.send({embed: embed})
 }} 
 });
 
-	  
+ client.on('message', msg => {
+if (msg.content ===  prefix + 'oraletiç') { 
+let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+.addField("Abim buyur oraletin",
+"İstediğinden değilse söyle (Kivi, portakal? Hangisiyse yaz)")
+msg.channel.send({embed: embed})
+var cevaplar = ['https://www.twitchmetrics.net/e/201113-pintiKIVI','https://www.twitchmetrics.net/e/193872-pintiORALET' ]; 
+var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
+msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
+}
+});
+
+
 //msg.channel.delete() kanalı siliyor
-client.login(process.env.BOT_TOKEN);
+client.login("BOT_TOKEN")
