@@ -404,6 +404,7 @@ if (msg.content.toLowerCase() === prefix + 'sunucubilgi') {
     return  msg.channel.sendEmbed(sunucubilgi);
 
     }
+	}); 
 
 
 
