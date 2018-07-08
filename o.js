@@ -359,24 +359,41 @@ msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RAN
 }
 
 });
-
 avatarDegis();
 function avatarDegis() {
 
 
   setTimeout(() => {
-   client.user.setAvatar('http://i.hizliresim.com/9NGQgr.jpg');
+   client.user.setAvatar('http://www.doygun.com.tr/yuklenen_dosyalar/urunler/191015051709_105susamli_istanbul_simidi.png');
   }, 60000
    );
 
 
    setTimeout(() => {
-      client.user.setAvatar('http://i.hizliresim.com/j6B8Xj.jpg');
+      client.user.setAvatar('https://goo.gl/Nh7ftb');
   }, 60000
    );
 
- }
 
+
+    setTimeout(() => {
+    client.user.setAvatar('https://goo.gl/yJB6ht');
+  }, 60000
+   );
+
+
+
+    setTimeout(() => {
+    client.user.setAvatar('https://goo.gl/BoFJiM');
+  }, 60000
+   );
+   
+
+   setTimeout(() => {
+     client.user.setAvatar('https://goo.gl/8xXvjY');
+  }, 60000
+   );
+ }
 
 //msg.channel.delete() kanalı siliyor
 
