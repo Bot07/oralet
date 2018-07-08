@@ -165,18 +165,13 @@ if (message.content === prefix + 'oraletiç') {
                 time: 10000, //time that bot waits for answer in ms
                 errors: ['time'],
             })
-                .then((collected) => {
-                    var pollRes = collected.first().content; //this is the first response collected
-                    message.channel.send(pollRes + 'İstedin, hemen geliyor!');
-                    // Do something else here (save response in database)
-                })
-                .catch(() => { // if no message is collected
-                    message.channel.send('Duyamadım, tekarar söyle');
-                });
-        });
-};
-  }
-
+                if (response.content === kivi) {
+					msg.channel.send('a')
+				}
+				if (response.content === portakal) {
+					msg.channel.send('b')
+				}
+	});
 });
 
  client.on('message', msg => {
