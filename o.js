@@ -152,30 +152,6 @@ msg.channel.send(`**Sonuç: ${sonuc}**`);
 } 
 });
 
-client.on('message', msg => {
-if (msg.content === 'hıyar') { 
-let embed = new Discord.RichEmbed() 
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-.addField("Hıyar ha? Bana ha!",
-"Şimdi yedim ulan seni!")
-msg.channel.send({embed: embed})
-}
-});
-
-client.on('message', msg => {
-if (msg.content ===  prefix + 'yanıyorsunfuatabi') { 
-let embed = new Discord.RichEmbed() 
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-.addField("Ne bakıyorsunuz ulan?",
-"Yanıyorsun Fuat abi! \nHemde Çırağan Sarayı gibi!")
-.addField("Yanıyorum ama beni yakanı da yakıcam!\n Sizi de yakıcam!\n Mahalleyi de yakıcam!\n Hepinizi yakıcam ulan inekler!",
-"Bu inek bu dumanla anca köşeyi döner. Ha ha ha ha ha ha... Bizi yakıcaktın ama kendini yaktın yürrü şimdi Marmara'ya hahahah")
-msg.channel.send({embed: embed})
-var cevaplar = ['https://www.ahmetcetintas.com/resimler/2016/01/Yeşilçam-Gardolap-Yanıyorsun-Fuat-Abi.jpg','https://www.ahmetcetintas.com/resimler/2016/01/Yeşilçam-Gardolap-Yanıyorsun-Fuat-Abi.jpg' ]; 
-var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
-msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
-}
-});
 
 client.on('message', msg => {
 if(msg.content.startsWith(prefix + 'tavsiye')){ 
