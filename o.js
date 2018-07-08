@@ -174,7 +174,7 @@ let embed = new Discord.RichEmbed()
 .addField("Abim buyur oraletin",
 "İstediğinden değilse söyle (Kivi, portakal? Hangisiyse yaz)")
 msg.channel.send({embed: embed})
-var cevaplar = ['https://www.google.com.tr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiHl_2Vh5DcAhWB_qQKHd2UC8wQjRx6BAgBEAU&url=http%3A%2F%2Fwww.kadinbakisi.com%2Foralet-sagliga-zararli-mi%2F&psig=AOvVaw2kpRq3MG2SZ9wYuWiI5PLm&ust=1531158196192346','https://www.google.com.tr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjU4NfXh5DcAhXDPOwKHckaDNgQjRx6BAgBEAU&url=http%3A%2F%2Fturkkahvesi.biz%2Fsicak-icecekler%2F&psig=AOvVaw2Y8jhZ9wZs6DJUSYN2_Elt&ust=1531158311697388' ]; 
+var cevaplar = ['http://i.hizliresim.com/Y64q5k.jpg','http://i.hizliresim.com/RDQ1bn.jpg' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
 }
