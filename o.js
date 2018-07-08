@@ -158,21 +158,7 @@ client.on('message', msg => {
     return  msg.channel.sendEmbed(sunucubilgi);
 
     }
-if (message.content === prefix + 'oraletiç') {
-    message.channel.send(`Kivi mi? Portakal mı? (Kivi ise: kivi Portakal ise: portakal yaz)`).then(() => {
-            message.channel.awaitMessages(response => response.content === `kivi` || response.content === `portakal`,  {
-                max: 1, // number of responses to collect
-                time: 10000, //time that bot waits for answer in ms
-                errors: ['time'],
-            })
-                if (response.content === kivi) {
-					msg.channel.send('a')
-				}
-				if (response.content === portakal) {
-					msg.channel.send('b')
-				}
-	});
-});
+
  client.on('message', msg => {
 if (msg.content === prefix + 'tokatla') { 
 var cevaplar = ['http://4.bp.blogspot.com/-Cdrk6ce21MM/VdCr1HRNkWI/AAAAAAAAEuc/txEqvYl-A_8/s1600/KEMAL_SUNAL_PATRONUN_KARISINA_TOKAT.gif','http://4.bp.blogspot.com/-Cdrk6ce21MM/VdCr1HRNkWI/AAAAAAAAEuc/txEqvYl-A_8/s1600/KEMAL_SUNAL_PATRONUN_KARISINA_TOKAT.gif' ]; 
@@ -224,5 +210,18 @@ msg.channel.send({embed: embed})
 }} 
 });
 
+	   client.on('message', msg => {
+if (msg.content ===  prefix + 'oraletiç') { 
+let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+.addField("Abim buyur oraletin",
+"İstediğinden değilse söyle (Kivi, portakal? Hangisiyse yaz)")
+msg.channel.send({embed: embed})
+var cevaplar = ['https://www.twitchmetrics.net/e/201113-pintiKIVI','https://www.twitchmetrics.net/e/193872-pintiORALET' ]; 
+var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
+msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
+}
+});
+	  
 //msg.channel.delete() kanalı siliyor
 client.login(process.env.BOT_TOKEN);
