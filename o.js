@@ -174,7 +174,7 @@ let embed = new Discord.RichEmbed()
 .addField("Abim buyur oraletin",
 "İstediğinden değilse söyle (Kivi, portakal? Hangisiyse yaz)")
 msg.channel.send({embed: embed})
-var cevaplar = ['http://i.hizliresim.com/Y64q5k.jpg','http://i.hizliresim.com/RDQ1bn.jpg' ]; 
+var cevaplar = ['http://i.hizliresim.com/Y64q5k','http://i.hizliresim.com/RDQ1bn' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
 }
