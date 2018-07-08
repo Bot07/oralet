@@ -160,7 +160,7 @@ client.on('message', msg => {
     }
 if (message.content === prefix + 'oraletiç') {
     message.channel.send(`Kivi mi? Portakal mı? (Kivi ise: kivi Portakal ise: portakal yaz)`).then(() => {
-            message.channel.awaitMessages(response => response.content === `kivi` || response.content === 'portakal',  {
+            message.channel.awaitMessages(response => response.content === `kivi` || response.content === `portakal`,  {
                 max: 1, // number of responses to collect
                 time: 10000, //time that bot waits for answer in ms
                 errors: ['time'],
@@ -173,7 +173,6 @@ if (message.content === prefix + 'oraletiç') {
 				}
 	});
 });
-
  client.on('message', msg => {
 if (msg.content === prefix + 'tokatla') { 
 var cevaplar = ['http://4.bp.blogspot.com/-Cdrk6ce21MM/VdCr1HRNkWI/AAAAAAAAEuc/txEqvYl-A_8/s1600/KEMAL_SUNAL_PATRONUN_KARISINA_TOKAT.gif','http://4.bp.blogspot.com/-Cdrk6ce21MM/VdCr1HRNkWI/AAAAAAAAEuc/txEqvYl-A_8/s1600/KEMAL_SUNAL_PATRONUN_KARISINA_TOKAT.gif' ]; 
