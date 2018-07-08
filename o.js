@@ -360,7 +360,22 @@ msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RAN
 
 });
 
+avatarDegis();
+function avatarDegis() {
 
+
+  setTimeout(() => {
+   client.user.setAvatar('http://i.hizliresim.com/9NGQgr.jpg');
+  }, 600000
+   );
+
+
+   setTimeout(() => {
+      client.user.setAvatar('http://i.hizliresim.com/j6B8Xj.jpg');
+  }, 600000
+   );
+
+ }
 
 
 //msg.channel.delete() kanalı siliyor
