@@ -208,18 +208,7 @@ client.channels.get("401633988726226956").send(msg.author.username + '** şunu t
 msg.channel.send({embed: embed}) 
 }} 
 });
-client.on('message', msg => {
-if (msg.content ===  prefix + 'oraletiç') { 
-let embed = new Discord.RichEmbed() 
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-.addField("Abim buyur oraletin",
-"İstediğinden değilse söyle (Kivi, portakal? Hangisiyse yaz)")
-msg.channel.send({embed: embed})
-var cevaplar = ['https://www.twitchmetrics.net/e/201113-pintiKIVI','https://www.twitchmetrics.net/e/193872-pintiORALET' ]; 
-var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
-msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
-}
-});
+
 	  
 //msg.channel.delete() kanalı siliyor
 client.login(process.env.BOT_TOKEN);
