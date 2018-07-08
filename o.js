@@ -28,7 +28,7 @@ client.on('ready', () => {
 
 	msg.channel.bulkDelete(2);
 
-	   let embed = new Discord.RichEmbed()
+   let embed = new Discord.RichEmbed()
 
     .setColor(3447003)
 
@@ -64,7 +64,7 @@ let embed = new Discord.RichEmbed()
 
 .addField(":joy: Eğlence Komutları :stuck_out_tongue: ", 
 
-"*\n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunuc bilgilerini gösterir.
+"*\n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunuc bilgilerini gösterir.")
 
 .setFooter(`Bot yapımcısı: Emir | AgentSLayer#5218'dir`) 
 
