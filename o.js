@@ -373,7 +373,7 @@ function avatarDegis() {
       client.user.setAvatar('https://pbs.twimg.com/profile_images/1016052133685231620/P95e3WQp_400x400.jpg');
   }, 60000
    );
-
+}
 
 //msg.channel.delete() kanalı siliyor
 
