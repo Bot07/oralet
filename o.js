@@ -364,13 +364,13 @@ function avatarDegis() {
 
 
   setTimeout(() => {
-   client.user.setAvatar('http://i.hizliresim.com/X6d0jk');
+   client.user.setAvatar('https://pbs.twimg.com/profile_images/1016052498614939656/klvhczYq_400x400.jpg');
   }, 60000
    );
 
 
    setTimeout(() => {
-      client.user.setAvatar('http://i.hizliresim.com/4z0P3G');
+      client.user.setAvatar('https://pbs.twimg.com/profile_images/1016052133685231620/P95e3WQp_400x400.jpg');
   }, 60000
    );
 
