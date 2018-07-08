@@ -15,7 +15,7 @@ client.on('ready', () => {
 	msg.channel.bulkDelete(2);
 	   let embed = new Discord.RichEmbed()
     .setColor(3447003)
-	.setDescription(söz + '\n"Adamsan beni konuşturacağına kendin konuş, hadi bakıyım!"')
+	.setDescription(söz)
 return msg.channel.send({embed})}
    }
 
@@ -31,7 +31,7 @@ let embed = new Discord.RichEmbed()
 .addField(":cry: Mod Komutları :hammer: ",  
 "\n o!temizçek = Kanalı tamamen temizler. \n o!temizle <sayı> = Belirtilen sayı kadar mesaj siler.") 
 .addField(":joy: Eğlence Komutları :stuck_out_tongue: ", 
-"*\n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!yanıyorsunfuatabi = Dene de gör! \n hıyar = Şimdi yedim ulan seni!") 
+"*\n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunucu bilgisini gösterir.") 
 .setFooter(`Bot yapımcısı: Emir | AgentSLayer#5218'dir`) 
 msg.member.send({embed: embed}) 
 }
@@ -113,7 +113,55 @@ var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)];
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
 } 
 });
+client.on('message', msg => {
 
+  if (msg.content.toLowerCase() === prefix + 'sunucubilgi') {
+
+    if  (msg.channel.type === 'dm') {
+
+      const ozelmesajuyarii = new Discord.RichEmbed()
+
+    .setColor(0x00AE86)
+
+    .setTimestamp()
+
+    .setAuthor(msg.author.username, msg.author.avatarURL);
+
+    msg.author.sendEmbed(ozelmesajuyarii); }
+
+    if (msg.channel.type !== 'dm') {
+
+      const sunucubilgi = new Discord.RichEmbed()
+
+    .setColor(0x00AE86)
+
+    .setTimestamp()
+
+    .setAuthor(msg.guild.name, msg.guild.iconURL)
+
+    .addField('Ad:', msg.guild.name)
+
+    .addField('ID', msg.guild.id)
+
+    .addField('Ana kanal:', msg.guild.defaultChannel)
+
+    .addField('Bölge', msg.guild.region)
+
+    .addField('Üye sayısı:', msg.guild.memberCount)
+
+    .addField('Sahibi:', msg.guild.owner)
+
+    .addField('Kanal sayısı:', msg.guild.channels.size)
+
+    .addField('Oluşturulma tarihi:', msg.guild.createdAt);
+
+    return  msg.channel.sendEmbed(sunucubilgi);
+
+    }
+
+  }
+
+});
 
  client.on('message', msg => {
 if (msg.content === prefix + 'tokatla') { 
