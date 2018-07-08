@@ -364,13 +364,13 @@ function avatarDegis() {
 
 
   setTimeout(() => {
-   client.user.setAvatar('http://i.hizliresim.com/X6d0jk.jpg');
+   client.user.setAvatar('http://i.hizliresim.com/X6d0jk');
   }, 60000
    );
 
 
    setTimeout(() => {
-      client.user.setAvatar('http://i.hizliresim.com/4z0P3G.jpg');
+      client.user.setAvatar('http://i.hizliresim.com/4z0P3G');
   }, 60000
    );
 
