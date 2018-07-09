@@ -384,9 +384,7 @@ msg.channel.send({embed: embed})
 
 client.on('message', msg => {
 if (msg.content.toLowerCase().match(/(ping)/g)) {
-	
-
-msg.channel.send("Pong!" \`${client.pings[0]}ms\`" Nasıl ama?" );
+msg.reply(`Pong! ${client.ping/1000} saniye`);	
 
 }
 });
