@@ -402,7 +402,7 @@ client.on('message', msg => {
 
     .setColor(3447003)
 
-	.setDescription(söz + "," + msg.author.id "Size oralet ısmarladı!")
+	.setDescription(söz + "," + msg.author.username + "Size oralet ısmarladı!")
 return msg.channel.send({embed})}
 
 	  
