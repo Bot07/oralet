@@ -1,3 +1,4 @@
+const weather = require('weather-js');
 const embed = require('discord.js'); 
 
 const Discord = require('discord.js'); 
@@ -396,6 +397,20 @@ function avatarDegis() {
   }, 600000
    );
  }
+
+client.on('message', msg => {
+
+
+
+if (msg.content ===  prefix + 'havadurumuankara') { 
+var weather = require('weather-js');
+weather.find({search: 'Ankara, Türkiye', degreeType: 'C'}, function(err, result) {
+  if(err) console.log(err);
+ 
+  console.log(JSON.stringify(result, null, 2));
+});
+}
+});
 
 //msg.channel.delete() kanalı siliyor
 
