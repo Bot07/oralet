@@ -278,7 +278,7 @@ let embed = new Discord.RichEmbed()
 
 .addField("Beni Eklemek İçin Tıkla",  
 
-"https://bit.ly/2tZDTj9") 
+"https://bit.ly/2m58mbf") 
 
 .addField("Çayocağıma Gelmek İçin Tıkla",  
 
