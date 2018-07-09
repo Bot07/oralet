@@ -389,7 +389,30 @@ msg.reply(`Pong! ${client.ping/1000} saniye`);
 }
 });
 
+client.on('message', msg => {
 
+   if (msg.content.startsWith(prefix + "oraletısmarla")) {
+
+    if (msg.channel.type !== "dm"){
+
+    let söz = msg.content.substring(2 + 12);
+
+   let embed = new Discord.RichEmbed()
+
+    .setColor(3447003)
+
+	.setDescription(söz + "Size oralet ısmarladı!")
+
+return msg.channel.send({embed})}
+	   var cevaplar = ['https://pbs.twimg.com/profile_images/419921182574788608/euNCj0cl_400x400.jpeg','https://pbs.twimg.com/profile_images/541931317257318400/2xBJjgen_400x400.jpeg' ]; 
+var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
+
+msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM"))
+   }
+
+
+
+});
    
 
 //msg.channel.delete() kanalı siliyor
