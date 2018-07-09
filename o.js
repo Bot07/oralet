@@ -388,7 +388,7 @@ if (msg.content.toLowerCase().match(/(ping)/g)) {
 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))
 	.addField("Pong!", 
-		  "\`${client.pings[0]}ms\`");
+		  \`${client.pings[0]}ms\`);
 	msg.channel.send({embed: embed})
 
 }
