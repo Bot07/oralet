@@ -1,9 +1,12 @@
 
+
 const embed = require('discord.js'); 
 
 const Discord = require('discord.js'); 
 
 const client = new Discord.Client(); 
+
+const weather = require('weather-js');
 
 var prefix = 'o!' 
 
@@ -398,7 +401,10 @@ function avatarDegis() {
    );
  }
 
-
+if (msg.content ===  prefix + 'havadurumu') { 
+weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
+  if(err) message.channel.send(err);
+	message.channel.send(JSON.stringify(result[0].current, null, 2));
 
 
 
