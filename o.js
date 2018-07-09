@@ -369,36 +369,18 @@ function avatarDegis() {
 
 
   setTimeout(() => {
-   client.user.setAvatar('https://bit.ly/2KJ744b');
+   client.user.setAvatar('https://pbs.twimg.com/profile_images/1016052133685231620/P95e3WQp_400x400.jpg');
   }, 600000
    );
 
 
    setTimeout(() => {
-      client.user.setAvatar('https://bit.ly/2ui5hbk');
+      client.user.setAvatar('https://pbs.twimg.com/profile_images/1016052498614939656/klvhczYq_400x400.jpg');
   }, 600000
    );
 
 
 
-    setTimeout(() => {
-    client.user.setAvatar('https://bit.ly/2KJ744b');
-  }, 600000
-   );
-
-
-
-    setTimeout(() => {
-    client.user.setAvatar('https://bit.ly/2ui5hbk');
-  }, 600000
-   );
-   
-
-   setTimeout(() => {
-     client.user.setAvatar('https://bit.ly/2KJ744b');
-  }, 600000
-   );
- }
 
 
 
