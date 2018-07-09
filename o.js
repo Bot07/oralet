@@ -384,7 +384,13 @@ msg.channel.send({embed: embed})
 
 client.on('message', msg => {
 if (msg.content.toLowerCase().match(/(ping)/g)) {
-(`Pong! \`${client.pings[0]}ms\``);
+	let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))
+	.addField("Pong!", 
+		  "\`${client.pings[0]}ms\`");
+	msg.channel.send({embed: embed})
+
 }
 });
 
