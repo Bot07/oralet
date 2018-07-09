@@ -1,4 +1,4 @@
-const weather = require('weather-js');
+
 const embed = require('discord.js'); 
 
 const Discord = require('discord.js'); 
