@@ -382,11 +382,11 @@ msg.channel.send({embed: embed})
 
 });
 
-
+client.on('message', msg => {
 if (msg.content.toLowerCase().match(/(ping)/g)) {
 (`Pong! \`${client.pings[0]}ms\``);
 }
-
+});
 
 
    
