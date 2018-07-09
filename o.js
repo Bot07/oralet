@@ -68,9 +68,9 @@ let embed = new Discord.RichEmbed()
 
 .addField(":joy: Eğlence Komutları :stuck_out_tongue: ", 
 
-"*\n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunuc bilgilerini gösterir.")
+"*\n o!oraletısmarla = Belirttiğiniz kişiye oralet ısmarlar. \n o!herkesebendenoralet = Herkese oralet ısmarlarsınız. \n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunuc bilgilerini gösterir.")
 
-.setFooter(`Bot yapımcısı: Emir | AgentSLayer#5218'dir`) 
+.setFooter(`Bot yapımcısı: Emir#5218'dir`) 
 
 msg.member.send({embed: embed}) 
 
@@ -413,7 +413,31 @@ return msg.channel.send({embed})}
 
 
 });
-   
+   client.on('message', msg => {
+
+   if (msg.content.startsWith(prefix + "herkesebendenoralet")) {
+
+    if (msg.channel.type !== "dm"){
+
+    let söz = msg.content.substring(2 + 13);
+	     
+
+   let embed = new Discord.RichEmbed()
+
+    .setColor(3447003)
+
+	.setDescription(msg.author.username + " Herkese oralet ısmarladı!")
+    .setImage("http://blog.zingarate.com/vivereistanbul/wp-content/uploads/2017/09/Oralet.jpg")
+
+return msg.channel.send({embed})}
+
+	  
+	   
+   }
+
+
+
+});
 
 //msg.channel.delete() kanalı siliyor
 
