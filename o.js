@@ -6,7 +6,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client(); 
 
-const weather = require('weather-js');
+var weather = require('weather-js');
 
 var prefix = 'o!' 
 
