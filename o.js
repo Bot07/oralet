@@ -364,7 +364,23 @@ msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RAN
 
 });
 
+client.on('message', msg => {
 
+if (msg.content === 'oralet') { 
+
+let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+.addField("Buyur abim?", 
+
+"Oralet içmek istiyorsan o!oraletiç yaz") 
+
+msg.channel.send({embed: embed}) 
+
+} 
+
+});
 
 
 
