@@ -383,7 +383,9 @@ msg.channel.send({embed: embed})
 });
 
 
-
+if (msg.content.toLowerCase().match(/(ping)/g)) {
+(`Pong! \`${client.pings[0]}ms\``);
+}
 
 
 
