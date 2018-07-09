@@ -387,8 +387,8 @@ if (msg.content.toLowerCase().match(/(ping)/g)) {
 	let embed = new Discord.RichEmbed() 
 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))
-	.addField("Pong!", 
-		  \`${client.pings[0]}ms\`);
+	.addField("Pong!" \`${client.pings[0]}ms\`,
+"Pingli miyim?");
 	msg.channel.send({embed: embed})
 
 }
