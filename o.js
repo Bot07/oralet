@@ -350,7 +350,7 @@ let embed = new Discord.RichEmbed()
 
 .addField("Abim buyur oraletin",
 
-"İstediğinden değilse söyle (Kivi, portakal? Hangisiyse yaz)")
+"Afiyet olsun")
 
 msg.channel.send({embed: embed})
 
@@ -372,7 +372,6 @@ let embed = new Discord.RichEmbed()
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
 .addField("Buyur abim?", 
-
 "Oralet içmek istiyorsan o!oraletiç yaz") 
 
 msg.channel.send({embed: embed}) 
@@ -400,7 +399,7 @@ client.on('message', msg => {
    let embed = new Discord.RichEmbed()
 
     .setColor(3447003)
-
+.setAuthor(msg.author.username, msg.author.avatarURL)
 	.setDescription(söz + " , " + msg.author.username + " Size oralet ısmarladı!")
     .setImage("https://pbs.twimg.com/profile_images/541931317257318400/2xBJjgen_400x400.jpeg")
 
@@ -425,8 +424,8 @@ return msg.channel.send({embed})}
    let embed = new Discord.RichEmbed()
 
     .setColor(3447003)
-
-	.setDescription(msg.author.username + " Herkese oralet ısmarladı!")
+.setAuthor(msg.author.username, msg.author.avatarURL)
+	.setDescription(msg.author.username + " herkese oralet ısmarladı!")
     .setImage("http://blog.zingarate.com/vivereistanbul/wp-content/uploads/2017/09/Oralet.jpg")
 
 return msg.channel.send({embed})}
@@ -438,6 +437,34 @@ return msg.channel.send({embed})}
 
 
 });
+ client.on('message', msg => {
+
+   if (msg.content.startsWith(prefix + "oralethazırla")) {
+
+    if (msg.channel.type !== "dm"){
+
+    let söz = msg.content.substring(2 + 13);
+	     
+
+   let embed = new Discord.RichEmbed()
+
+    .setColor(3447003)
+.setAuthor(msg.author.username, msg.author.avatarURL)
+	.setDescription(msg.author.username + " oraletleri hazırlamış!")
+    .setImage("https://cdn2.avansas.com/urun/61169/oralet-portakal-granul-350-g-zoom-1.jpg")
+
+return msg.channel.send({embed})}
+
+	  
+	   
+   }
+
+
+
+});
+
+
+
 
 //msg.channel.delete() kanalı siliyor
 
