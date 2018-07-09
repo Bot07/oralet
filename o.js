@@ -402,7 +402,7 @@ client.on('message', msg => {
     .setColor(3447003)
 
 	.setDescription(söz + "," + msg.author.username + " Size oralet ısmarladı!")
-    .setImage("https://pbs.twimg.com/profile_images/419921182574788608/euNCj0cl_400x400.jpeg")
+    .setImage("https://pbs.twimg.com/profile_images/541931317257318400/2xBJjgen_400x400.jpeg")
 
 return msg.channel.send({embed})}
 
