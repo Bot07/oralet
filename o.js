@@ -402,10 +402,7 @@ function avatarDegis() {
 
 
 
-if (msg.content ===  prefix + 'havadurumu') { 
-weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
-  if(err) message.channel.send(err);
-	message.channel.send(JSON.stringify(result[0].current, null, 2));
+
  
   
 
