@@ -364,7 +364,41 @@ msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RAN
 
 });
 
+avatarDegis();
+function avatarDegis() {
 
+
+  setTimeout(() => {
+   client.user.setAvatar('https://bit.ly/2KJ744b');
+  }, 600000
+   );
+
+
+   setTimeout(() => {
+      client.user.setAvatar('https://bit.ly/2ui5hbk');
+  }, 600000
+   );
+
+
+
+    setTimeout(() => {
+    client.user.setAvatar('https://bit.ly/2KJ744b');
+  }, 600000
+   );
+
+
+
+    setTimeout(() => {
+    client.user.setAvatar('https://bit.ly/2ui5hbk');
+  }, 600000
+   );
+   
+
+   setTimeout(() => {
+     client.user.setAvatar('https://bit.ly/2KJ744b');
+  }, 600000
+   );
+ }
 
 //msg.channel.delete() kanalı siliyor
 
