@@ -463,22 +463,6 @@ return msg.channel.send({embed})}
 
 });
 
- client.on('message', msg => {
-
-   if (msg.content.startsWith(prefix + "hava")) {
-
-var weather = require('weather-js');
- 
-// Options:
-// search:     location name or zipcode
-// degreeType: F or C
- 
-weather.find({search: 'Ankara', degreeType: 'C'}, function(err, result) {
-  if(err) console.log(err);
- 
-  console.log(JSON.stringify(result, null, 2));
-});
-   });
 
 //msg.channel.delete() kanalı siliyor
 
