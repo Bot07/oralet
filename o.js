@@ -464,7 +464,41 @@ return msg.channel.send({embed})}
 });
 
 
+ client.on('message', msg => {
 
+if (msg.content ===  prefix + 'adamtopla') { 
+
+let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+.addField("Buyur" + msg.author.username + " abi",
+
+"Bir sıkıntı mı var?")
+
+msg.channel.send({embed: embed})
+
+.setImage("http://i.hizliresim.com/LDZg5o.jpg")
+
+msg.channel.send({embed})}
+
+}
+
+});
+client.on('message', msg => {
+
+if (msg.content ===  prefix + 'karikatür') { 
+
+let embed = new Discord.RichEmbed() 
+
+var cevaplar = ['http://i.hizliresim.com/pnX8Lo.jpg','http://i.hizliresim.com/GDP2lb.jpg' ]; 
+var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
+
+msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
+
+}
+
+});
 //msg.channel.delete() kanalı siliyor
 
 client.login(process.env.BOT_TOKEN)
