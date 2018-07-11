@@ -476,13 +476,14 @@ let embed = new Discord.RichEmbed()
 
 "Bir sıkıntı mı var?")
 
-msg.channel.send({embed: embed})
+
 
 .setImage("http://i.hizliresim.com/LDZg5o.jpg")
 
 msg.channel.send({embed})}
 
 }
+	   });
 
 
 client.on('message', msg => {
