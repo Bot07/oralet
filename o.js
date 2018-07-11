@@ -464,27 +464,6 @@ return msg.channel.send({embed})}
 });
 
 
- client.on('message', msg => {
-
-if (msg.content ===  prefix + 'adamtopla') { 
-
-let embed = new Discord.RichEmbed() 
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-.addField("Buyur" + msg.author.username + " abi",
-
-"Bir sıkıntı mı var?")
-
-
-
-.setImage("http://i.hizliresim.com/LDZg5o.jpg")
-
-msg.channel.send({embed})}
-
-}
-	   });
-
 
 client.on('message', msg => {
 
