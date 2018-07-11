@@ -491,7 +491,8 @@ client.on('message', msg => {
 if (msg.content ===  prefix + 'karikatür') { 
 
 let embed = new Discord.RichEmbed() 
-
+.setDescription(":D")
+msg.channel.send({embed: embed})
 var cevaplar = ['http://i.hizliresim.com/pnX8Lo.jpg','http://i.hizliresim.com/GDP2lb.jpg' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
 
