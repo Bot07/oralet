@@ -463,7 +463,18 @@ return msg.channel.send({embed})}
 
 });
 
+client.on('message', msg => {
 
+   if (msg.content.startsWith(prefix + "baskınyap")) {
+
+   let embed = new Discord.RichEmbed()
+
+    .setColor(3447003)
+.setAuthor(msg.author.username, msg.author.avatarURL)
+	.setDescription(msg.author.username + "bir durum mu var?")
+    .setImage("http://i.hizliresim.com/GDPkq2.jpg")
+
+return msg.channel.send({embed})}
 //msg.channel.delete() kanalı siliyor
 
 client.login(process.env.BOT_TOKEN)
