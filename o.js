@@ -473,7 +473,11 @@ client.on('message', msg => {
 .setAuthor(msg.author.username, msg.author.avatarURL)
 	.setDescription(msg.author.username + "bir durum mu var?")
     .setImage("http://i.hizliresim.com/GDPkq2.jpg")
+  }
 
+
+
+});
 return msg.channel.send({embed})}
 //msg.channel.delete() kanalı siliyor
 
