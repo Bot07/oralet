@@ -484,7 +484,7 @@ msg.channel.send({embed})}
 
 }
 
-});
+
 client.on('message', msg => {
 
 if (msg.content ===  prefix + 'karikatür') { 
