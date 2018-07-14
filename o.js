@@ -27,10 +27,11 @@ client.on('ready', () => {
    if (msg.content.startsWith(prefix + "konuştur")) {
 
     if (msg.channel.type !== "dm"){
+	    msg.delete (msg.content == 'konuştur')
 
     let söz = msg.content.substring(2 + 9);
 
-	msg.delete (msg.content == 'amk')
+	
 
    let embed = new Discord.RichEmbed()
 
