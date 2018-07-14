@@ -30,7 +30,7 @@ client.on('ready', () => {
 
     let söz = msg.content.substring(2 + 9);
 
-	msg.channel.bulkDelete(2);
+	msg.delete (msg.content == 'amk')
 
    let embed = new Discord.RichEmbed()
 
