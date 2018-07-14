@@ -472,7 +472,7 @@ if (msg.content ===  prefix + 'karikatür') {
 let embed = new Discord.RichEmbed() 
 .setDescription(":D")
 msg.channel.send({embed: embed})
-var cevaplar = ['https://goo.gl/wCpbbp','https://goo.gl/sLzhsC' ]; 
+var cevaplar = ['https://goo.gl/R6znh7','https://goo.gl/XY1m7i' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
 
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
@@ -512,7 +512,7 @@ if (msg.content ===  prefix + 'adamtopla') {
 let embed = new Discord.RichEmbed() 
 .setDescription("Bir sıkıntı mı var? " + msg.author.username + " abi")
 msg.channel.send({embed: embed})
-var cevaplar = ['https://goo.gl/pRRzjS','https://goo.gl/pRRzjS' ]; 
+var cevaplar = ['https://goo.gl/BMqf6g','https://goo.gl/BMqf6g' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
 
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
