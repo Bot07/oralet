@@ -472,7 +472,7 @@ if (msg.content ===  prefix + 'karikatür') {
 let embed = new Discord.RichEmbed() 
 .setDescription(":D")
 msg.channel.send({embed: embed})
-var cevaplar = ['https://goo.gl/EvSJpe','https://goo.gl/Nr4gV3' ]; 
+var cevaplar = ['https://cdn.discordapp.com/attachments/404648718625931266/467758375866859530/48c93f937991fccbfc6a7a13b3b432f2.jpg','https://cdn.discordapp.com/attachments/404648718625931266/467758402232123403/oralet-siparisi.jpg'' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
 
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
