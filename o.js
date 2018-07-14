@@ -510,7 +510,7 @@ client.on('message', msg => {
 if (msg.content ===  prefix + 'adamtopla') { 
 
 let embed = new Discord.RichEmbed() 
-.setDescription("Bir sıkıntı mı var? " + msg.author.username + "abi")
+.setDescription("Bir sıkıntı mı var? " + msg.author.username + " abi")
 msg.channel.send({embed: embed})
 var cevaplar = ['https://goo.gl/pRRzjS','https://goo.gl/pRRzjS' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
