@@ -68,7 +68,7 @@ let embed = new Discord.RichEmbed()
 
 .addField(":joy: Eğlence Komutları :stuck_out_tongue: ", 
 
-"*\n o!oraletısmarla = Belirttiğiniz kişiye oralet ısmarlar. \n o!herkesebendenoralet = Herkese oralet ısmarlarsınız. \n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunuc bilgilerini gösterir.")
+"*\n o!karikatür = Oralet ile ilgili karikatür gösterir. \n o!adamtopla = Adam toplar. \n o!oraletısmarla = Belirttiğiniz kişiye oralet ısmarlar. \n o!herkesebendenoralet = Herkese oralet ısmarlarsınız. \n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunuc bilgilerini gösterir.")
 
 .setFooter(`Bot yapımcısı: Emir#5218'dir`) 
 
@@ -504,6 +504,21 @@ client.on('message', msg => {
     return  msg.channel.sendEmbed(sunucubilgi);
     }
   }
+});
+client.on('message', msg => {
+
+if (msg.content ===  prefix + 'adamtopla') { 
+
+let embed = new Discord.RichEmbed() 
+.setDescription("Bir sıkıntı mı var? " + msg.author.username + "abi")
+msg.channel.send({embed: embed})
+var cevaplar = ['https://goo.gl/pRRzjS','https://goo.gl/pRRzjS' ]; 
+var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
+
+msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
+
+}
+
 });
 //msg.channel.delete() kanalı siliyor
 
