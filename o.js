@@ -472,7 +472,7 @@ if (msg.content ===  prefix + 'karikatür') {
 let embed = new Discord.RichEmbed() 
 .setDescription(":D")
 msg.channel.send({embed: embed})
-var cevaplar = ['http://i.hizliresim.com/pnX8Lo.jpg','http://i.hizliresim.com/GDP2lb.jpg' ]; 
+var cevaplar = ['https://goo.gl/EvSJpe','https://goo.gl/Nr4gV3' ]; 
 var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
 
 msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
