@@ -520,23 +520,7 @@ msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RAN
 }
 
 });
-client.on('message', msg => { 
 
-if(msg.content === prefix + 'güncelleme') { 
-
-let embed = new Discord.RichEmbed()  
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))  
-
-.addField("*Güncellemeler*", 
-
-"o!adamtopla ve o!karikatür komutları eklendi") 
-
-msg.channel.send({embed: embed})  
-
-} 
-
-});
 //msg.channel.delete() kanalı siliyor
 
 client.login(process.env.BOT_TOKEN)
