@@ -61,15 +61,15 @@ let embed = new Discord.RichEmbed()
 
 .addField("Ana Komutlar", 
 
-" o!bilgi = Botun bilgilerini gösterir. \n o!istatistik = Botun istatistiklerini gösterir. \n o!davet = Botun ekleme linkini gösterir. \n o!sunucular = Haraca bağlanan sunucular. \n o!tavsiye = Tavsiyenizi iletir. ") 
+"  o!bilgi = Botun bilgilerini gösterir. \n o!istatistik = Botun istatistiklerini gösterir. \n o!davet = Botun ekleme linkini gösterir. \n o!sunucular = Haraca bağlanan sunucular. \n o!tavsiye = Tavsiyenizi iletir. ") 
 
 .addField("Mod Komutları",  
 
-"\n o!temizçek = Kanalı tamamen temizler. \n o!temizle <sayı> = Belirtilen sayı kadar mesaj siler.") 
+"\n  o!temizçek = Kanalı tamamen temizler. \n o!temizle <sayı> = Belirtilen sayı kadar mesaj siler.") 
 
 .addField("Eğlence Komutları", 
 
-"\n o!karikatür = Oralet ile ilgili karikatür gösterir. \n o!adamtopla = Adam toplar. \n o!oraletısmarla = Belirttiğiniz kişiye oralet ısmarlar. \n o!herkesebendenoralet = Herkese oralet ısmarlarsınız. \n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunucu bilgilerini gösterir.")
+"\n  o!karikatür = Oralet ile ilgili karikatür gösterir. \n o!adamtopla = Adam toplar. \n o!oraletısmarla = Belirttiğiniz kişiye oralet ısmarlar. \n o!herkesebendenoralet = Herkese oralet ısmarlarsınız. \n o!yazıtura = Yazı tura atar şansına ne gelirse.\n o!havalıyürü = Havalı yürür. \n o!havalıyumruk = Havalı bir şekilde yumruk atar.\n o!selamla = Politakacı gibi selamlar. \n o!tokatla = Birini tokatlar. \n o!topuğunasık = Birinin topuğuna sıkar. \n o!avatar = Profil fotoğrafını gösterir. \n o!sunucubilgi = Sunucu bilgilerini gösterir.")
 
 .setFooter("Bot yapımcısı: Emir#5218'dir.") 
 
