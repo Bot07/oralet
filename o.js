@@ -12,7 +12,7 @@ var prefix = 'o!'
 
 
 
-client.on("ready", () => {client.user.setGame('o!yardım | Kivi mi? Portakal mı? | Sunucu Sayısı: ' + client.guilds.size , 'https://twitch.tv/GardropFuat') 
+client.on("ready", () => {client.user.setGame('o!yardım | Kivi mi? Portakal mı?' , 'https://twitch.tv/GardropFuat') 
 
 }); 
 
